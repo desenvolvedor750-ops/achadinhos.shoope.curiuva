@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Achadinhos Shopee</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #ee4d2d;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin: 10px 0 15px;
+            font-size: 17px;
+        }
+
+        .aviso {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ee4d2d;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .inicio h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .inicio p {
+            color: #666;
+        }
+
+        .galeria {
+            width: 92%;
+            max-width: 1200px;
+            margin: 30px auto;
+
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .produto {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+            padding-bottom: 20px;
+            text-align: center;
+            min-width: 0;
+        }
+
+        .produto img {
+            width: 100%;
+            height: 230px;
+            object-fit: contain;
+            display: block;
+            background: white;
+            padding: 10px;
+        }
+
+        .produto h3 {
+            margin: 15px 10px 8px;
+            font-size: 18px;
+        }
+
+        .produto p {
+            margin: 8px 10px;
+            color: #666;
+        }
+
+        .link-produto {
+            text-align: center;
+            margin: 20px 10px;
+            font-family: Arial, sans-serif;
+        }
+
+        .link-titulo {
+            display: inline-block;
+            background: #ee4d2d;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .seta {
+            font-size: 38px;
+            margin-top: 5px;
+            font-weight: bold;
+            color: #ee4d2d;
+        }
+
+        .link {
+            display: inline-block;
+            color: #ee4d2d;
+            font-weight: bold;
+            text-decoration: none;
+            word-break: break-word;
+            margin-top: 5px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .whatsapp a {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 1000px) {
+            .galeria {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .aviso {
+                font-size: 16px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .galeria {
+                width: 94%;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .produto img {
+                height: 260px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🛍️ Achadinhos Shopee</h1>
+
+        <p>
+            Produtos incríveis e ofertas selecionadas
+        </p>
+
+        <div class="aviso">
+            COMPRE ACESSANDO LINK DE AFILIADO LOGO ABAIXO DAS IMAGENS
+        </div>
+
+    </header>
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#produtos">Produtos</a>
+
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+    <section class="inicio" id="inicio">
+
+        <h2>🔥 Achadinhos da Shopee</h2>
+
+        <p>
+            Confira nossos produtos selecionados.
+        </p>
+
+    </section>
+
+    <section class="galeria" id="produtos">
+
+
+        <!-- 1 - PANELA -->
+
+        <div class="produto">
+
+            <img src="panela.10.jpeg" alt="Panela">
+
+            <h3>Panela</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/5fp7ATRf49"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/5fp7ATRf49
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 2 - KIT 10 POTES -->
+
+        <div class="produto">
+
+            <img src="KIT 10 POTES.jpeg" alt="Kit 10 Potes">
+
+            <h3>Kit 10 Potes</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/8KpsNW3JRu"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/8KpsNW3JRu
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 3 - APOSTILA -->
+
+        <div class="produto">
+
+            <img src="APOSTILA.jpeg" alt="Apostila">
+
+            <h3>Apostila</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/40gtE1uhL0"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/40gtE1uhL0
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 4 - GARRAFAS -->
+
+        <div class="produto">
+
+            <img src="GARRAFAS.jpeg" alt="Garrafas">
+
+            <h3>Garrafas</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/7ptbnWhr7p"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/7ptbnWhr7p
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 5 - POTES -->
+
+        <div class="produto">
+
+            <img src="potes.jpg" alt="Potes">
+
+            <h3>Potes</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/40gtCs1mgd"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/40gtCs1mgd
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 6 - COLHER -->
+
+        <div class="produto">
+
+            <img src="COLHER.jpeg" alt="Colher">
+
+            <h3>Colher</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/60RxfQul9S"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/60RxfQul9S
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 7 - FONE -->
+
+        <div class="produto">
+
+            <img src="FONE.jpeg" alt="Fones">
+
+            <h3>Fones</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/8AWSEjUU9y"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/8AWSEjUU9y
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 8 - PANO DE PRATO -->
+
+        <div class="produto">
+
+            <img src="PANO DE PRATO.jpeg" alt="Pano de Prato">
+
+            <h3>Pano de Prato</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/8fSir5jDnh"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/8fSir5jDnh
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 9 - MARMITA -->
+
+        <div class="produto">
+
+            <img src="marmita.jpeg" alt="Marmita">
+
+            <h3>Marmita</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/4qG1kZ5aH6"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/4qG1kZ5aH6
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- 10 - FRIGIDEIRA -->
+
+        <div class="produto">
+
+            <img src="FRIGIDERA.jpeg" alt="Frigideira">
+
+            <h3>Frigideira</h3>
+
+            <p>Confira este produto.</p>
+
+            <div class="link-produto">
+
+                <div class="link-titulo">
+                    ✨ ACESSE O LINK ABAIXO ✨
+                </div>
+
+                <div class="seta">↓</div>
+
+                <a class="link"
+                   href="https://s.shopee.com.br/1gIyY00hcE"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    https://s.shopee.com.br/1gIyY00hcE
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+       <footer>
+
+        <p>🛍️ Achadinhos Shopee</p>
+
+        <p>Produtos e ofertas selecionadas</p>
+
+        <p>© 2026 - Todos os direitos reservados</p>
+
+    </footer>
+
+
+</body>
+
+</html>
+```
+
+  
